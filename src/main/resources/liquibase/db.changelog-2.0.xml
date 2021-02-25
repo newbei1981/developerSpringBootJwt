@@ -1,0 +1,115 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="2.0.0" author="newbie1981">
+        <insert tableName="skills">
+            <column name="name" value="Java"/>
+        </insert>
+        <insert tableName="skills">
+            <column name="name" value="PHP"/>
+        </insert>
+        <insert tableName="skills">
+            <column name="name" value="JavaScript"/>
+        </insert>
+        <insert tableName="skills">
+            <column name="name" value="Python"/>
+        </insert>
+        <insert tableName="skills">
+            <column name="name" value="C#"/>
+        </insert>
+        <insert tableName="skills">
+            <column name="name" value="C++"/>
+        </insert>
+        <insert tableName="skills">
+            <column name="name" value="Ruby"/>
+        </insert>
+        <insert tableName="skills">
+            <column name="name" value="HTML"/>
+        </insert>
+        <insert tableName="skills">
+            <column name="name" value="CSS"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="2.0.1" author="newbie1981">
+        <insert tableName="users">
+            <column name="user_name" value="Admin"/>
+            <column name="password" value="$2y$12$ttagTF3RgGyMKMLErzglh.vO1uECARGQI6bKdsHv6J54OKjtjJ9.y"/>
+            <column name="phone_number" value="80973664426"/>
+            <column name="created" value="2021-01-25 07:18:02"/>
+            <column name="updated" value="2021-01-25 07:18:02"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="2.0.2" author="newbie1981">
+        <insert tableName="users">
+            <column name="user_name" value="SomeUser"/>
+            <column name="password" value="$2y$12$Cqs9aKLtJRzbfWZkzFAdVe52xMGbJwxuqB.B/IbBT80FSJyCqeI3y"/>
+            <column name="phone_number" value="80974465555"/>
+            <column name="created" value="2021-01-25 07:18:02"/>
+            <column name="updated" value="2021-01-25 07:18:02"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="2.0.3" author="newbie1981">
+        <insert tableName="accounts">
+            <column name="data" value="Some information private ADMIN info"/>
+            <column name="user_id" value="1"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="2.0.4" author="newbie1981">
+        <insert tableName="accounts">
+            <column name="data" value="Some information about user or developer etc."/>
+            <column name="user_id" value="2"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="2.0.5" author="newbie1981">
+        <insert tableName="user_roles">
+            <column name="user_id" value="1"/>
+            <column name="role_id" value="1"/>
+        </insert>
+        <insert tableName="user_roles">
+            <column name="user_id" value="1"/>
+            <column name="role_id" value="2"/>
+        </insert>
+        <insert tableName="user_roles">
+            <column name="user_id" value="1"/>
+            <column name="role_id" value="3"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="2.0.6" author="newbie1981">
+        <insert tableName="user_roles">
+            <column name="user_id" value="2"/>
+            <column name="role_id" value="2"/>
+        </insert>
+        <insert tableName="user_roles">
+            <column name="user_id" value="2"/>
+            <column name="role_id" value="3"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="2.0.7" author="newbie1981">
+        <insert tableName="developers">
+            <column name="first_name" value="SomeFirstName"/>
+            <column name="last_name" value="SomeLastName"/>
+            <column name="specialty" value="Junior Java Developer"/>
+            <column name="account_id" value="2"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="2.0.8" author="newbie1981">
+        <insert tableName="developer_skills">
+            <column name="developer_id" value="1"/>
+            <column name="skill_id" value="1"/>
+        </insert>
+        <insert tableName="developer_skills">
+            <column name="developer_id" value="1"/>
+            <column name="skill_id" value="5"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
